@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="red_ball">
+    <pose>0 0 0.1 0 0 0</pose>
+    <link name="link">
+      <inertial>
+        <mass>0.1</mass>
+        <inertia>
+          <ixx>0.001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.001</iyy>
+          <iyz>0</iyz>
+          <izz>0.001</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <sphere><radius>0.1</radius></sphere>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <sphere><radius>0.1</radius></sphere>
+        </geometry>
+        <material>
+          <ambient>1 0 0 1</ambient>
+          <diffuse>1 0 0 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>
